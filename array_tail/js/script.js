@@ -1,10 +1,15 @@
-let arraynumeri=['']
+let arraynumeri=[]
 let btn= document.getElementById('mybutton')
 
 btn.addEventListener('click',function(){
     let uservalue =document.getElementById('elementi').value;
-    console.log(uservalue)
     
+    for(let x=0; x < uservalue;x++){
+        let numerogenerato = Math.floor(getRandomNumber(1, 100));
+        let arraynumeri=[]
+        arraynumeri.push(numerogenerato)
+        console.log(arraynumeri)
+    }
 })
 
 
